@@ -1,0 +1,10 @@
+# Bản đồ chỉ đường cho tập DAWN gốc (RAW)
+path: dawn_yolo_dataset  # Tên thư mục chứa data của ông
+train: images/train      # Đường dẫn tới ảnh train
+val: images/val          # Đường dẫn tới ảnh test/val
+
+# Số lượng class (DAWN có 6 class)
+nc: 6
+
+# Tên của từng class theo đúng thứ tự
+names: ['person', 'bicycle', 'car', 'motorcycle', 'bus', 'truck']

@@ -1,0 +1,24 @@
+# Bỏ qua toàn bộ kết quả chạy và trọng số của YOLO 
+runs/
+*.pt
+
+# Bỏ qua toàn bộ Dataset 
+dawn_yolo_dataset/
+dawn_clahe_dataset/
+dawn_zeroshot_clahe/
+dawn_zeroshot_raw/
+
+# Bỏ qua các file Video/Ảnh test nặng
+*.mp4
+*.avi
+*.jpg
+*.png
+
+# Môi trường ảo và rác của Python
+venv/
+__pycache__/
+*.pyc
+
+# File cấu hình của hệ điều hành và IDE
+.vscode/
+.DS_Store
