@@ -1,0 +1,7 @@
+path: D:/Vehicle Detection in Adverse Weather Condition/dawn_yolo_dataset
+train: D:/Vehicle Detection in Adverse Weather Condition/data_settings/fold_1_train.txt
+val: D:/Vehicle Detection in Adverse Weather Condition/data_settings/fold_1_val.txt
+
+# Số class và Tên class chuẩn
+nc: 6
+names: ['person', 'bicycle', 'car', 'motorcycle', 'bus', 'truck']

@@ -1,0 +1,7 @@
+path: D:/Vehicle Detection in Adverse Weather Condition/dawn_clahe_dataset
+train: D:/Vehicle Detection in Adverse Weather Condition/data_settings/fold_3_train_clahe.txt
+val: D:/Vehicle Detection in Adverse Weather Condition/data_settings/fold_3_val_clahe.txt
+
+# Số class và Tên class chuẩn
+nc: 6
+names: ['person', 'bicycle', 'car', 'motorcycle', 'bus', 'truck']
