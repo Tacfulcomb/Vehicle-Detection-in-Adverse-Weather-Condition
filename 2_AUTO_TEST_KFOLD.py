@@ -17,7 +17,7 @@ def log_to_csv(test_name, map_score, log_file="K_Fold_Results_Log.csv"):
 
 if __name__ == '__main__':
     print("="*60)
-    print("🔍 BẮT ĐẦU CHẤM ĐIỂM 5-FOLD & LƯU TỰ ĐỘNG RA CSV")
+    print("BẮT ĐẦU CHẤM ĐIỂM 5-FOLD & LƯU TỰ ĐỘNG RA CSV")
     print("="*60)
 
     configs = [
@@ -60,7 +60,7 @@ if __name__ == '__main__':
 
     # In Bảng Tổng và lưu điểm Trung bình cuối cùng
     print("\n" + "="*60)
-    print("🏆 BẢNG KẾT QUẢ TRUNG BÌNH 5-FOLD 🏆")
+    print(" BẢNG KẾT QUẢ TRUNG BÌNH 5-FOLD ")
     print("="*60)
     for test_case, total_map in total_scores.items():
         avg_map = total_map / 5.0
@@ -68,4 +68,4 @@ if __name__ == '__main__':
         # Ghi luôn cái điểm trung bình này vào CSV cho dễ lọc
         log_to_csv(f"TRUNG_BINH_CHUNG_{test_case}", avg_map)
     print("="*60)
-    print("✅ Đã xuất toàn bộ dữ liệu ra file: K_Fold_Results_Log.csv")
+    print("Đã xuất toàn bộ dữ liệu ra file: K_Fold_Results_Log.csv")

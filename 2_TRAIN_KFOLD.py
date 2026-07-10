@@ -3,7 +3,7 @@ from ultralytics import YOLO
 
 if __name__ == '__main__':
     print("="*60)
-    print("🔥 LÒ LUYỆN ĐAN MEGA: 4 CẤU HÌNH x 5 FOLDS = 20 MẺ")
+    print("LÒ LUYỆN ĐAN MEGA: 4 CẤU HÌNH x 5 FOLDS = 20 MẺ")
     print("="*60)
 
     # 4 Cấu hình lõi (Không liên quan NMS)
@@ -52,7 +52,7 @@ if __name__ == '__main__':
             
             # Tính năng chống sập: Bỏ qua nếu mẻ này đã train thành công
             if os.path.exists(weight_path):
-                print(f"⏩ Đã có sẵn {run_name}, bỏ qua...")
+                print(f"Đã có sẵn {run_name}, bỏ qua...")
                 continue
 
             yaml_file = f"data_fold_{fold}_clahe.yaml" if cfg['use_clahe'] else f"data_fold_{fold}.yaml"
@@ -62,7 +62,7 @@ if __name__ == '__main__':
             else:
                 da_args = {'hsv_h': 0.0, 'hsv_s': 0.0, 'hsv_v': 0.0, 'degrees': 0.0, 'translate': 0.0, 'scale': 0.0, 'mosaic': 0.0, 'mixup': 0.0, 'fliplr': 0.0}
 
-            print(f"\n🚀 ĐANG TRAIN: {run_name}")
+            print(f"\n ĐANG TRAIN: {run_name}")
             model = YOLO('yolov8n.pt')
             model.train(
                 data=yaml_file,
@@ -78,4 +78,4 @@ if __name__ == '__main__':
                 **da_args
             )
 
-    print("\n✅ ĐÃ HOÀN THÀNH 20 MẺ TRAINING K-FOLD!")
+    print("\n ĐÃ HOÀN THÀNH 20 MẺ TRAINING K-FOLD!")
